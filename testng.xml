@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" thread-count="1" parallel="methods" group-by-instances="true">
+    <parameter name="OS" value="Windows"/>
+  <!--  <test name="ChromeTest" >
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="TestCase.*"> </package>
+        </packages>
+       &lt;!&ndash; <classes>
+            <class name="TestCase.PSDS_3906_SAVP.TC_3906_SAVP_OOB"> </class>
+        </classes>&ndash;&gt;
+    </test>-->
+
+ <!--   <test name="FirefoxTest" >
+        <parameter name="browser" value="firefox"/>
+        <packages>
+            <package name="TestCase.*"> </package>
+        </packages>
+    </test>-->
+
+    <test name="FirefoxTest" >
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestCase.TC_NEW_TrialTest"> </class>
+        </classes>
+    </test>
+</suite>
